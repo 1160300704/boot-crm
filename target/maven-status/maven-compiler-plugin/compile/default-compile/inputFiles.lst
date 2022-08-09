@@ -1,0 +1,17 @@
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\po\User.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\po\Customer.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\controller\CustomerController.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\po\BaseDict.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\service\BaseDictService.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\dao\UserDao.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\utils\Page.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\service\CustomerService.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\service\impl\CustomerServiceImpl.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\service\impl\BaseDictServiceImpl.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\controller\UserController.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\dao\CustomerDao.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\service\impl\UserServiceImpl.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\service\UserService.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\dao\BaseDictDao.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\utils\NavigationTag.java
+G:\IDEAspace3\boot_crm\src\main\java\com\zhouhao\controller\Interceptor\SysInterceptor.java

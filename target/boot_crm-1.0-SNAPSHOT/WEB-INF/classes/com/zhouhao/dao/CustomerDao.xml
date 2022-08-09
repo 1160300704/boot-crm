@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhouhao.dao.CustomerDao">
+    <sql id="selectCustomerListWhere">
+        <where>
+            <if test="cust_name != null and cust_name != ''" >
+                cust_name like "%"#{cust_name}"%"
+            </if>
+            <if test="cust_source != null">
+                cust_source = #{cust_source}
+            </if>
+            <if test="cust_industry != null">
+                cust_industry = #{cust_industry}
+            </if>
+            <if test="cust_level != null">
+                cust_level = #{cust_level}
+            </if>
+        </where>
+    </sql>
+
+    <select id="selectCustomerList" resultType="Customer">
+        select  cust_id,
+        cust_name,
+        (select dict_item_name FROM base_dict b where customer.cust_source = b.dict_id and b.dict_type_code = '002') as cust_source,
+        (select dict_item_name FROM base_dict b where customer.cust_industry = b.dict_id and b.dict_type_code = '001') as cust_industry,
+        (select dict_item_name FROM base_dict b where customer.cust_level = b.dict_id and b.dict_type_code = '006') as cust_level,
+        cust_phone,
+        cust_mobile
+        from customer
+        <include refid="selectCustomerListWhere"></include>
+        limit #{start}, #{rows}
+    </select>
+    <select id="selectCustomerListCount" resultType="java.lang.Integer">
+        select count(*) from customer
+        <include refid="selectCustomerListWhere"></include>
+    </select>
+</mapper>
